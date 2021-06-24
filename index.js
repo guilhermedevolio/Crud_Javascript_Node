@@ -10,3 +10,5 @@ app.use('/', router);
 app.listen(3000, function() {
     return 'Ó o javascript iniciando KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK';
 })
+
+module.exports = app;
