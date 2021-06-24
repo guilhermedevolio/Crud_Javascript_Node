@@ -1,10 +1,10 @@
-const db = require('../database/database')
+const db = require('../db/knex')
 
 class User {
     async getAll() {
         return await db.select("*").from("users");
     }
-    
+
     async create(name,email) {
         try {
             return await db.insert({name, email}).table("users");

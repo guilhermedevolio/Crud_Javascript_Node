@@ -1,8 +1,8 @@
-const knex = require("../database/database");
+const knex = require("../db/knex");
 const User = require("../models/User");
 
 class HomeController {
-    
+
     index(req,res) {
         res.send('Rota Home menó');
     } 
